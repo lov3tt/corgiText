@@ -1,0 +1,13 @@
+body {
+    background-image: url("img/17.jpg");
+    color: rgba(0, 0, 0, 0.651);
+  
+   
+  }
+
+  #config {
+    padding-left: 15%;
+    padding-right: 15%;
+    background-image: white;
+    border: 1mm black;
+  }

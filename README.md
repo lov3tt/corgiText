@@ -1,1 +1,1 @@
-# corgiText
+# TextEditor

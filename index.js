@@ -9,6 +9,17 @@ slider.oninput = function() {
   output.innerHTML = this.value;
 }
 
+function fontGenerator () {
+  var fonts = document.getElementById("fontType");
+
+}
+
+//appendMethod
+let fontType = document.querySelector("#fontType");
+fontType.appendChild();
+
+console.log(fontType.textContent);
+
 //ani speed
 var slider1 = document.getElementById("myRange1");
 var output1 = document.getElementById("value1");
@@ -52,3 +63,11 @@ output5.innerHTML = slider5.value;
 slider5.oninput = function() {
   output5.innerHTML = this.value;
 }
+
+//Get text and compile
+function compile(){
+    var userInput = document.getElementById("inputText");
+    var userOutput = document.getElementById("outputText");
+    var name = userInput.value;
+    userOutput.value = "Hi there, " + name + "!"
+    }

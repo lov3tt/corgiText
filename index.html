@@ -8,7 +8,13 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 <link rel="stylesheet" href="assets/css/style.css">
-<title>Title</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Font+Name">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="stylesheet" href="https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyBYtiN1m6q3Faj--njxwiYQ9fTwsR-yP0c">
+
+<title>SleepyCorgi's Text Gif Maker</title>
 </head>
 <body>
 
@@ -21,9 +27,11 @@
 
     <div class="container-fluid">
         <!--Display require W3 for realtime-->
+        <fieldset><p id="modifyText">testing</p></fieldset>
+        
     </div>
 
-    <div class="container-fluid"><!--Config-->
+    <div class="container-fluid" id="config"><!--Config-->
     <!--Text Box-->
     <div class="mb-3 row">
         <label for="input" class="col-sm-2 col-form-label">Enter Text Here</label>
@@ -32,8 +40,8 @@
         </div>
       </div>
     <!--Color Selector-->
-    <label for="colorpicker">Color Picker:</label>
-   <input type="color" id="colorpicker" value="#0000ff">
+    <label for="colorPicker">Color Picker:</label>
+   <input type="color" id="colorPicker" value="#0000ff">
 
    <br>
     <!--Font Size-->
@@ -46,28 +54,41 @@
         <input type="range" min="1" max="100" value="50" class="slider" id="myRange1">
         <p>Value: <span id="value1"></span></p>
       </div>
-    <!--Font type Module-->
+
+    <!--Width-->
+    Width:<div class="slidecontainer">
+        <input type="range" min="1" max="250" value="50" class="slider" id="myRange2">
+        <p>Value: <span id="value2"></span>px</p>
+      </div>
+    <!--Height-->
+    Height:<div class="slidecontainer">
+        <input type="range" min="1" max="80" value="50" class="slider" id="myRange3">
+        <p>Value: <span id="value3"></span>px</p>
+      </div>
+
+    <!--X Offset-->
+    X-Offset:<div class="slidecontainer">
+        <input type="range" min="-50" max="50" value="0" class="slider" id="myRange4">
+        <p>Value: <span id="value4"></span></p>
+      </div>
+    <!--Y Offset-->
+    Y-Offset:<div class="slidecontainer">
+        <input type="range" min="-50" max="50" value="0" class="slider" id="myRange5">
+        <p>Value: <span id="value5"></span></p>
+      </div>
+          <!--Font type Module-->
     Font Type:
     <div class="dropdown">
         <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
           Font
         </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <ul class="dropdown-menu" id="fontType" aria-labelledby="dropdownMenuButton1">
           <li><a class="dropdown-item" href="#">Action</a></li>
           <li><a class="dropdown-item" href="#">Another action</a></li>
           <li><a class="dropdown-item" href="#">Something else here</a></li>
         </ul>
       </div>
-    <!--Width-->
-    Width:<div class="slidecontainer">
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange2">
-        <p>Value: <span id="value2"></span>px</p>
-      </div>
-    <!--Height-->
-    Height:<div class="slidecontainer">
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange3">
-        <p>Value: <span id="value3"></span>px</p>
-      </div>
+
     <!--Animation type-->
     Animation Type:
     <div class="dropdown">
@@ -80,16 +101,8 @@
           <li><a class="dropdown-item" href="#">Something else here</a></li>
         </ul>
       </div>
-    <!--X Offset-->
-    X-Offset:<div class="slidecontainer">
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange4">
-        <p>Value: <span id="value4"></span></p>
-      </div>
-    <!--Y Offset-->
-    Y-Offset:<div class="slidecontainer">
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange5">
-        <p>Value: <span id="value5"></span></p>
-      </div>
+
+
     </div>
 
     <div class="container-fluid">
